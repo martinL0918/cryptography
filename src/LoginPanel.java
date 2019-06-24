@@ -71,7 +71,7 @@ public class LoginPanel extends JFrame{
 		login.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (e.getSource() == login) {
-					if(account.getText().equals("test001")&& password.getText().equals("aaaaa")) {
+					if(account.getText().equals("test002")&& password.getText().equals("aaaaa")) {
 						JOptionPane.showMessageDialog(null,"----------Welcome Martin----------");
 						frmLogin.dispose();
 						MainPanel main = new MainPanel();
