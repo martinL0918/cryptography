@@ -80,6 +80,10 @@ public class Decryption {
 							b = (int)process + 'z' -'a' + 1;
 							process = (char)b;
 						}
+						if (process<'A') {
+							b = (int)process +'Z' -'A' +1;
+							process=(char)b;
+						}
 						input += process+"";
 						
 					}

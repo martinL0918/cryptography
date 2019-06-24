@@ -80,6 +80,10 @@ public class Encryption {
 								b = (int)process - 'z' +'a' - 1;
 								process = (char)b;
 							}
+							else if(process>'Z' && process<'a') {
+								b=(int)process -'Z'+'A' -1; 
+								process=(char)b;
+							}
 						input += process+"";
 						
 					}
