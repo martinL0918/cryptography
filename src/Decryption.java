@@ -11,7 +11,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.JPanel;
-import java.util.*;
+
 public class Decryption {
 
 	private JFrame frmDecryptText;
@@ -51,7 +51,6 @@ public class Decryption {
 		frmDecryptText = new JFrame();
 		frmDecryptText.setTitle("Decrypt Text");
 		frmDecryptText.setBounds(100, 100, 450, 300);
-		frmDecryptText.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmDecryptText.getContentPane().setLayout(null);
 		JLabel lblNewLabel = new JLabel("Decryption:");
 		lblNewLabel.setBounds(20, 10, 97, 15);
@@ -81,7 +80,7 @@ public class Decryption {
 							process = (char)b;
 						}
 						if (process<'A') {
-							b = (int)process +'Z' -'A' +1;
+							b = (int)process;
 							process=(char)b;
 						}
 						input += process+"";

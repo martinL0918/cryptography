@@ -11,7 +11,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.JPanel;
-import java.util.*;
+
 public class Encryption {
 
 	private JFrame frmEncryptText;
@@ -51,7 +51,6 @@ public class Encryption {
 		frmEncryptText = new JFrame();
 		frmEncryptText.setTitle("Encrypt Text");
 		frmEncryptText.setBounds(100, 100, 450, 300);
-		frmEncryptText.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmEncryptText.getContentPane().setLayout(null);
 		JLabel lblNewLabel = new JLabel("Encryption:");
 		lblNewLabel.setBounds(20, 10, 97, 15);
